@@ -1,0 +1,17 @@
+<layer>
+  <name>site_collecte</name>
+  <id>LayerInfoImpl--13d33df0:19c23058eb6:-7ff0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--13d33df0:19c23058eb6:-7fdb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--13d33df0:19c23058eb6:-7ff1</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2026-02-03 11:05:41.979 UTC</dateCreated>
+  <dateModified>2026-02-03 11:59:58.12 UTC</dateModified>
+</layer>

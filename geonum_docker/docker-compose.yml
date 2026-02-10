@@ -1,0 +1,22 @@
+services:
+  geoserver:
+    container_name: geonum_geoserver #nom qu'on donne au container
+    image: docker.osgeo.org/geoserver:2.26.0 #on va chercher l'image déjà existante pour la connecter ici 
+    environment: #on définit des variables d'env -> on s'attarde pas dessus
+      - RUN_UNPRIVILEGED=true
+      - CHANGE_OWNERSHIP_ON_FOLDERS="/opt /opt/geoserver_data/ /mnt/geoserver_geodata"
+      - CORS_ENABLED=true
+      - SKIP_DEMO_DATA=true
+    ports: #permet d'intéragir avec le container en se connectant au bon port -> localhost (8080 est celui de base normalement)
+      - "8080:8080"
+    volumes: #la donnée va continuer à vivre ici
+      - ./geoserver/opt:/opt/geoserver_data
+
+  web:
+    container_name: geonum_web
+    image: caddy:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./app/dist/:/srv

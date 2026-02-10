@@ -1,0 +1,17 @@
+<layer>
+  <name>deals_by_country_centroid</name>
+  <id>LayerInfoImpl-24c542ac:19ad91f23c2:-7fd6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-24c542ac:19ad91f23c2:-7fda</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-24c542ac:19ad91f23c2:-7fd7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2025-12-01 10:18:14.797 UTC</dateCreated>
+  <dateModified>2025-12-01 10:18:25.431 UTC</dateModified>
+</layer>
