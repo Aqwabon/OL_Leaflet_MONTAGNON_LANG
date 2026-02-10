@@ -1,0 +1,10 @@
+<passwordPolicy>
+  <id>-3c6737b3:19c47acc9ab:-7ff5</id>
+  <name>master</name>
+  <className>org.geoserver.security.validation.PasswordValidatorImpl</className>
+  <uppercaseRequired>false</uppercaseRequired>
+  <lowercaseRequired>false</lowercaseRequired>
+  <digitRequired>false</digitRequired>
+  <minLength>8</minLength>
+  <maxLength>-1</maxLength>
+</passwordPolicy>

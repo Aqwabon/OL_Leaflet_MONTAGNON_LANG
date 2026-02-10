@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenLayers - Gestion des couches</title>
+    <script type="module" crossorigin src="/assets/index-CtnU77AV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dvs2N_9v.css">
+  </head>
+  <body>
+    
+    <div id="menu-layers" class="panel">
+      <h4>Fonds de carte</h4>
+      <label>
+        <input type="radio" name="fond" id="radioOsm" checked> Clair (OSM)
+      </label>
+      <label>
+        <input type="radio" name="fond" id="radioDark"> Sombre
+      </label>
+
+      <div style="margin-top: 15px;">
+        <h4>Couches</h4>
+        <label>
+          <input type="checkbox" id="checkbox-dechet" checked> Déchèteries
+        </label>
+        <label>
+          <input type="checkbox" id="checkbox-composteurs" checked> Bornes Compost
+        </label>
+      </div>
+    </div>
+
+    <div id="menu-filters" class="panel">
+      <h4>Filtre Composteurs</h4>
+      <div>
+        <label>
+          <input type="radio" id="bouton-eta" name="produce" value="Établissement" /> Établissement
+        </label>
+      </div>  
+      <div>
+        <label>
+          <input type="radio" id="bouton-quar" name="produce" value="Quartier" /> Quartier
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" id="bouton-pied" name="produce" value="Pied" /> Pied d'immeuble
+        </label>
+      </div>
+    </div>
+    <div id="description-projet">
+      <p>
+          Nous avons choisi de travailler avec des données du Data Grand Lyon, dans un premier temps, car ce sont des données accessibles sur un territoire que nous connaissons assez bien. 
+          Et dans un second temps, car les données des sites de collectes et des bornes à compost sont des données que nous utilisons pour le projet Géonumérique. 
+          Ce projet est à destination d'une association qui ramasse des déchets sur le territoire de la métropole et notre objectif est de faire de la prévention en indiquant des lieux de collectes afin d'éviter que certains déchets ne soient jetés dans la nature.
+      </p>
+  </div>
+<img id="legende" src= "/legende_openlayers.svg" alt="legende">
+    <div id="map"></div>
+  </body>
+</html>
